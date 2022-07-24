@@ -248,4 +248,8 @@ $(scrollTop).on('click', function (e) {
     return false;
 });
 
+$( '.hamburger-to-close' ).click( function( event ) {
+    $( this ).toggleClass( 'close' );
+  });
+
  })(jQuery);
