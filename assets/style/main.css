@@ -12083,7 +12083,7 @@ h5,
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 @-webkit-keyframes blink {
@@ -14369,6 +14369,12 @@ video {
 }
 
 @media screen and (max-width: 479px) {
+    .hero-block {
+        position: absolute;
+        top: 112px;
+        right: 0;
+    }
+
     .hero-title {
         font-size: 70px;
     }
@@ -14390,12 +14396,13 @@ video {
     }
 
     .hero-image {
-        top: 357px;
-        left: -40px;
+        top: 342px;
+        left: -2px;
+        width: 250px;
+        height: 350px;
     }
 
     .hero-image.two {
-        right: -35px;
-        bottom: 375px;
+        display: none;
     }
 }
