@@ -153,7 +153,7 @@ AOS.init({
             }, true);
 
             portfolioIsotope.arrange({
-                filter: '.filter-wax'
+                filter: '.filter-dye'
             });
         }
 

@@ -11914,6 +11914,8 @@ h5,
     border-bottom-right-radius: 8px;
     border-right: 1px solid rgba(0, 0, 0, 0.06);
     border-left: 1px solid rgba(0, 0, 0, 0.06);
+    width: 90%;
+    margin: 0 auto;
 }
 
 .ftco-navbar-light.scrolled .nav-item.active>a {
@@ -12057,7 +12059,7 @@ h5,
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 @-webkit-keyframes blink {
@@ -12301,7 +12303,7 @@ h5,
     opacity: 1;
 }
 
-.services .icon {
+.menu .icon {
     width: 100px;
     height: 100px;
     background: #8e566099;
@@ -12312,16 +12314,16 @@ h5,
     border-radius: 50%;
 }
 
-.services .icon span {
+.menu .icon span {
     font-size: 44px;
     color: #fff;
 }
 
-.services .text {
+.menu .text {
     width: 100%;
 }
 
-.services .text h3 {
+.menu .text h3 {
     font-size: 24px;
     font-weight: 400;
     color: #f2e7dd;
@@ -13806,7 +13808,6 @@ textarea.form-control {
 .aboutImage img {
     max-width: 100%;
     max-height: 100%;
-    box-shadow: 10px 10px #ccbfb4;
 }
 
 .aboutUs {
@@ -13846,35 +13847,17 @@ textarea.form-control {
     }
 }
 
-.jarallax {
-    position: relative;
-    margin: 45px 0;
-    padding: 150px 0;
-    background: linear-gradient(#e6bfa2aa, rgba(29, 36, 52, .5), #e6bfa2aa), url(../images/jarallax.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.services {
-    background: #f0ceaa77;
+.menu {
+    background-image: linear-gradient(153deg, hsla(0, 0%, 100%, -0.76), hsla(0, 0%, 100%, 0));
+    -webkit-backdrop-filter: blur(9px);
+    backdrop-filter: blur(10px);
     padding: 40px 10px;
 }
 
-#services .title {
-    color: #f2e7dd;
+#menu .title {
+    color: #000;
     position: relative;
     margin-bottom: 30px;
-}
-
-h2.title::after {
-    content: '';
-    height: 0.5px;
-    max-width: 400px;
-    width: 50%;
-    background: #f2e7dd;
-    position: absolute;
-    top: 26px;
 }
 
 @media (min-width: 769px) {
@@ -13894,22 +13877,24 @@ h2.title::after {
 }
 
 .portfolio #portfolio-flters li {
+    width: 100px;
     cursor: pointer;
     display: inline-block;
     padding: 10px 8px;
     font-size: 14px;
     font-weight: 500;
     line-height: 1;
-    color: #444444;
     margin: 5px 2px;
+    border: 1px solid #ba5370;
     transition: all ease-in-out 0.3s;
-    background: #fafafc99;
+    color: #ba5370;
     position: relative;
+    text-align: center;
 }
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-    background: #b48a72aa;
+    background: linear-gradient(to right, #f4e2d8, #ba5370);
     color: #fff;
 }
 
@@ -13977,26 +13962,13 @@ h2.title::after {
     height: 50px;
     width: 50px;
     margin: 10px auto;
-    border-radius: 50%;
-    background-color: #fdecdb;
-    box-shadow: 1px 1px 3px #cf9953;
+    border-radius: 8px;
     cursor: pointer;
     transform: scale(1);
     transition: all .2s ease-in-out;
-}
-
-.social-media-list li:after {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    box-shadow: 0 0 0 1px #e1bb8f;
-    transition: all .2s ease-in-out;
-    z-index: 10;
+    background-color: hsla(0, 0%, 100%, 0.36);
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
 }
 
 .social-media-list li:hover {
@@ -14004,7 +13976,6 @@ h2.title::after {
 }
 
 h2.contactTitle {
-    border-bottom: 1px solid #141313;
     padding-bottom: 15px;
     width: fit-content;
     margin: 0 auto;
@@ -14026,22 +13997,25 @@ h2.contactTitle {
 
 .floatingButtonInner a:hover,
 .floatingButtonInner a:focus {
-    color: #fff !important;
+    color: #ba5370 !important;
 }
 
 .floatingButton {
-    display: block;
-    width: 35px;
-    height: 35px;
-    text-align: center;
-    color: #fff;
-    line-height: 35px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ba5370;
     position: absolute;
     bottom: 0px;
     right: 0px;
-    background-color: #9e716bdd;
     opacity: 1;
+    background-color: hsla(0, 0%, 100%, 0.36);
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
     transition: all 0.4s;
+    border-radius: 5px;
 }
 
 .floatingButton .fas {
@@ -14059,7 +14033,7 @@ h2.contactTitle {
 
 .floatingMenu {
     position: absolute;
-    bottom: 20px;
+    bottom: 24px;
     right: 0px;
     display: none;
 }
@@ -14076,11 +14050,13 @@ h2.contactTitle {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 33px;
-    height: 33px;
+    width: 36px;
+    height: 36px;
     font-size: 1.1rem;
-    background: #9e716bdd;
-    color: #fff;
+    background-color: hsla(0, 0%, 100%, 0.36);
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
+    color: #ba5370;
     border-radius: 50%;
     overflow: hidden;
     white-space: nowrap;
@@ -14094,30 +14070,33 @@ h2.contactTitle {
 .scrollTop {
     position: fixed;
     display: none;
-    background-color: #9e716bdd;
-    width: 35px;
-    height: 35px;
+    width: 39px;
+    height: 40px;
     align-items: center;
     justify-content: center;
     line-height: 1;
     right: 15px;
     bottom: 15px;
-    transition: background-color 0.5s;
+    background-color: hsla(0, 0%, 100%, 0.36);
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
+    transition: all 0.5s;
     z-index: 9;
-    color: #fff;
+    border-radius: 5px;
+    color: #ba5370;
 }
 
 .scrollTop:hover,
 .scrollTop:focus {
-    color: #fff !important;
+    color: #ba5370 !important;
+}
+
+#contact {
+    background: linear-gradient(to bottom, #f4e2d8, #ba5370);
 }
 
 #contact a {
     color: #141313;
-}
-
-#product {
-    background-color: #fdecdb;
 }
 
 video {
@@ -14200,6 +14179,10 @@ video {
     right: 0;
     bottom: auto;
     margin: 0 auto;
+}
+
+img.title-line {
+    width: 64px;
 }
 
 .hero-title.right {
@@ -14301,10 +14284,10 @@ video {
     }
 
     .title-line {
-        top: -120px;
-        right: auto;
-        left: -43px;
-        transform: rotate(-74deg);
+        top: -33px;
+        right: -33px;
+        left: auto;
+        transform: rotate(215deg);
     }
 
     .hero-title {
@@ -14335,11 +14318,15 @@ video {
 }
 
 @media screen and (max-width: 479px) {
+    .hero-wrapper {
+        flex-direction: column;
+    }
 
     .hero-block {
         background-image: linear-gradient(153deg, hsla(0, 0%, 100%, -0.76), hsla(0, 0%, 100%, 0));
         -webkit-backdrop-filter: blur(9px);
-        backdrop-filter: blur(2px);
+        backdrop-filter: blur(10px);
+        margin-left: 0;
     }
 
     .hero-title {
@@ -14364,14 +14351,24 @@ video {
     }
 
     .hero-image {
-        top: 357px;
-        left: -40px;
+        right: -50px;
+        opacity: 0.7;
+        top: auto;
+        bottom: auto;
+        display: flex;
+        align-items: center;
+        width: 90%;
+        height: 450px;
+        justify-content: center;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        top: auto;
+        left: auto;
         box-shadow: none;
     }
 
     .hero-image.two {
-        right: -35px;
-        bottom: 375px;
+        display: none;
     }
 }
 
@@ -14464,4 +14461,36 @@ video {
         font-size: 20px;
         letter-spacing: 0.5px;
     }
+}
+
+.single_pricing_text {
+    background: #ffffff44;
+    width: 90%;
+    padding: 20px 10px;
+    margin: 20px auto;
+}
+
+.single_pricing_text h2 small {
+    font-size: 70%;
+    margin-left: 5px;
+}
+
+.serviceCard {
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(to right, #ddd6f3, #faaca8);
+}
+
+.serviceCard .tags {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    left: auto;
+    bottom: auto;
+    padding: 6px 16px;
+    border-radius: 35px;
+    background-image: linear-gradient(to right, hsla(0, 0%, 100%, 0.24), hsla(0, 0%, 100%, 0));
+    -webkit-backdrop-filter: blur(9px);
+    backdrop-filter: blur(9px);
+    color: #fff;
 }
