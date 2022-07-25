@@ -13887,13 +13887,14 @@ textarea.form-control {
     margin: 5px 2px;
     transition: all ease-in-out 0.3s;
     color: #ba5370;
+    background-color: #fff4;
     position: relative;
     text-align: center;
 }
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-    background: linear-gradient(to right, #f4e2d8, #ba5370);
+    background: linear-gradient(to right, #ba537099, #ba5370dd);
     color: #fff;
 }
 
@@ -14471,8 +14472,20 @@ img.title-line {
 .single_pricing_text {
     background: #ffffff44;
     width: 90%;
-    padding: 20px 10px;
+    padding: 30px 10px;
     margin: 20px auto;
+    position: relative;
+}
+
+.single_pricing_text::after {
+    content: '';
+    position: absolute;
+    top: 13px;
+    bottom: 13px;
+    left: 13px;
+    right: 13px;
+    border: 1px solid;
+    opacity: 0.3;
 }
 
 .single_pricing_text h2 small {
@@ -14482,22 +14495,166 @@ img.title-line {
 
 .serviceCard {
     width: 100%;
-    height: 220px;
-    background: linear-gradient(to top, #d792a6, #ba5370);
-    color: #fff;
-    padding: 20px;
+    height: auto;
+    position: relative;
+    background: #fff4;
+    color: #000;
+    padding: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.serviceCard::after {
+    content: '';
+    position: absolute;
+    top: 13px;
+    bottom: 13px;
+    left: 13px;
+    right: 13px;
+    border: 1px solid;
+    opacity: 0.3;
 }
 
 .serviceCard .tags {
     left: auto;
     bottom: auto;
     padding: 6px 16px;
-    border-radius: 35px;
-    background-image: linear-gradient(to right, hsla(0, 0%, 100%, 0.24), hsla(0, 0%, 100%, 0));
+    background-image: linear-gradient(to right, #ba537099, #ba5370dd);
     -webkit-backdrop-filter: blur(9px);
     backdrop-filter: blur(9px);
     color: #fff;
+}
+
+.album {
+    width: 100%;
+    list-style: none;
+}
+
+.album .item {
+    position: relative;
+    height: 0;
+    float: left;
+}
+
+.album img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 100%;
+    width: auto;
+}
+
+.item .txt {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    text-align: center;
+    color: #fff;
+    background-color: rgba(0, 0, 0, .6);
+    display: flex;
+    opacity: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: rotateX(0);
+    transition: .5s;
+}
+
+.item:hover .txt {
+    transform: rotateX(360deg);
+    opacity: 1;
+}
+
+.item h3 {
+    font-weight: 700;
+    margin-bottom: .4em;
+}
+
+.item p {
+    font-weight: 100;
+    line-height: 1.7;
+}
+
+@media screen and (min-width:2000px) {
+    .album .item {
+        width: 6.25%;
+        padding-top: 6.25%;
+    }
+
+    .album .item:nth-child(33n+18),
+    .album .item:nth-child(33n+20),
+    .album .item:nth-child(33n+22),
+    .album .item:nth-child(33n+24),
+    .album .item:nth-child(33n+26) {
+        width: 12.5%;
+        padding-top: 12.5%;
+    }
+
+    .album .item:nth-child(33n+29),
+    .album .item:nth-child(33n+33),
+    .album .item:nth-child(33n+37),
+    .album .item:nth-child(33n+41),
+    .album .item:nth-child(33n+45) {
+        margin-top: -6.25%;
+    }
+}
+
+@media screen and (min-width:1200px) and (max-width:1999px) {
+    .album .item {
+        width: 12.5%;
+        padding-top: 12.5%;
+    }
+
+    .album .item:nth-child(15n+9),
+    .album .item:nth-child(15n+11),
+    .album .item:nth-child(15n+13) {
+        width: 25%;
+        padding-top: 25%;
+    }
+
+    .album .item:nth-child(15n+16),
+    .album .item:nth-child(15n+20) {
+        margin-top: -12.5%;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1199px) {
+    .album .item {
+        width: 20%;
+        padding-top: 20%;
+    }
+
+    .album .item:nth-child(9n+6),
+    .album .item:nth-child(9n+8) {
+        width: 40%;
+        padding-top: 40%;
+    }
+
+    .album .item:nth-child(9n+11) {
+        margin-top: -20%;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .album .item {
+        width: 25%;
+        padding-top: 25%;
+    }
+
+    .album .item:nth-child(9n+6) {
+        width: 50%;
+        padding-top: 50%;
+    }
+
+    .album .item:nth-child(9n+9) {
+        margin-top: -25%;
+    }
 }
