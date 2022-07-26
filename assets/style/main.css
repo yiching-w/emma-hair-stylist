@@ -13879,7 +13879,7 @@ textarea.form-control {
     width: 100px;
     cursor: pointer;
     display: inline-block;
-    padding: 10px 8px;
+    padding: 15px;
     font-size: 14px;
     font-weight: 500;
     line-height: 1;
@@ -14560,7 +14560,7 @@ h2.title::after {
     background-image: url(../images/life/10.jpg);
 }
 
-@media (min-width:992px) {
+@media (min-width:769px) {
     .swiper {
         width: 350px;
         height: 480px;
