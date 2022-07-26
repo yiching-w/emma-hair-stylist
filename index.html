@@ -40,6 +40,7 @@
         integrity="sha512-TyUaMbYrKFZfQfp+9nQGOEt+vGu4nKzLk0KaV3nFifL3K8n7lzb8DayTzLOK0pNyzxGJzGRSw78e8xqJhURJ3Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/style/aos.css">
     <link rel="stylesheet" href="assets/style/main.css">
 </head>
@@ -53,12 +54,12 @@
             </div>
             <div class="collapse navbar-collapse" id="ftco-nav">
                 <ul class="navbar-nav mx-auto">
-                    <li class="nav-item"><a href="#about" class="nav-link">關於 Emma</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">Emma | 關於</a></li>
                     <li class="nav-item"><a href="#services" class="nav-link">服務項目</a></li>
-                    <li class="nav-item"><a href="#portfolio" class="nav-link">作品介紹</a></li>
+                    <li class="nav-item"><a href="#portfolio" class="nav-link">作品</a></li>
                     <li class="nav-item"><a href="#menu" class="nav-link">價目表</a></li>
-                    <li class="nav-item"><a href="#photo " class="nav-link">生活照</a></li>
-                    <li class="nav-item"><a href="#contact" class="nav-link">聯絡 Emma</a></li>
+                    <li class="nav-item"><a href="#life" class="nav-link">Emma | 生活</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">聯絡方式</a></li>
                 </ul>
             </div>
         </div>
@@ -152,7 +153,7 @@
         <div class="container">
             <div class="row justify-content-between mb-3 mb-md-5">
                 <div class="col-lg-6 section-title position-relative wow fadeInUp">
-                    <h2 class="text-center">作品介紹</h2>
+                    <h2 class="text-center title">作品介紹</h2>
                 </div>
                 <div class="col-lg-6 text-center wow fadeInUp">
                     <ul id="portfolio-flters">
@@ -312,7 +313,7 @@
     </section>
 
 
-    <section class="ftco-section ftco-no-pt ftco-no-pb" id="menu">
+    <section class="ftco-section" id="menu">
         <di>
             <div class="container">
                 <div class="text-center"><img src="assets/images/coin.png" alt="" width="50"></div>
@@ -429,31 +430,48 @@
         </di>
     </section>
 
-    <section id="life">
-
-    </section>
-
-
-    <section class="mb-5 py-5 position-relative" id="product">
+    <section class="ftco-section" id="care">
         <div class="container">
+            <h2 class="title">京喚羽系統修護</h2>
             <div class="row">
-                <div class="col-sm-6 mb-3 text-right wow fadeInUp">
-                    <h1 class="text-left title">商品介紹</h1>
-                    <div class="productImg" style="width: 100%;height: 100%;">
-                        <img src="assets/images/dye/10.jpg" alt=""
-                            style="max-width: 80%; max-height: 80%; object-fit: cover;">
-                        <div class="eng">Product Introduction</div>
-                    </div>
+                <div class="col-sm-6 col-lg-3">
+                    <img src="assets/images/care/1.jpg" alt="">
                 </div>
-                <div class="col-sm-6 text-center wow fadeInUp">
-                    <video autoplay="autoplay" loop muted playsinline>
-                        <source src="assets/video.mp4" />
-                    </video>
+                <div class="col-sm-6 col-lg-3">
+                    <img src="assets/images/care/2.jpg" alt="">
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <img src="assets/images/care/3.jpg" alt="">
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <img src="assets/images/care/4.jpg" alt="">
                 </div>
             </div>
+        </div>
     </section>
 
-    <section id="contact">
+    <section class="ftco-section" id="life">
+        <!-- <h2 class="title">生活照</h2> -->
+        <div class="mb-3">
+            <img src="assets/images/life.png" alt="">
+        </div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+                <div class="swiper-slide"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ftco-section" id="contact">
         <div class="container wow fadeInUp">
             <div class="row">
                 <div class="col-md-5 mb-5 mb-md-0 d-flex flex-column align-items-center justify-content-center">
@@ -546,6 +564,7 @@
     <script src="assets/script/scrollax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jarallax/2.0.3/jarallax.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="assets/script/main.js"></script>
 </body>
 
