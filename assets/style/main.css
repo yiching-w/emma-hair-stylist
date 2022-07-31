@@ -14132,8 +14132,8 @@ img.title-line {
 
 .hero-image {
     position: absolute;
-    left: 125px;
-    top: 294px;
+    left: 0;
+    top: 215px;
     overflow: hidden;
     box-shadow: 0px 0px 80px #c0627b;
     width: 260px;
@@ -14151,8 +14151,8 @@ img.title-line {
 .hero-image.two {
     left: auto;
     top: auto;
-    right: 110px;
-    bottom: 288px;
+    right: 0px;
+    bottom: 180px;
 }
 
 .bg-placeholder {
@@ -14167,13 +14167,13 @@ img.title-line {
 
 @media screen and (max-width: 1199px) {
     .hero-image {
-        top: 290px;
-        left: 23px;
+        top: 220px;
+        left: 40px;
     }
 
     .hero-image.two {
         right: 46px;
-        bottom: 311px;
+        bottom: 200px;
         width: 220px;
         height: 300px;
     }
@@ -14181,7 +14181,7 @@ img.title-line {
 
 @media screen and (max-width: 991px) {
     .hero-wrapper {
-        padding-top: 100px;
+        padding-top: 150px;
     }
 
     .hero-title {
@@ -14193,14 +14193,15 @@ img.title-line {
     }
 
     .hero-image {
-        top: 321px;
+        top: 170px;
+        left: 25px;
         width: 220px;
         height: 300px;
     }
 
     .hero-image.two {
-        right: 36px;
-        bottom: 351px;
+        right: 60px;
+        bottom: 140px;
         width: 200px;
         height: 280px;
     }
@@ -14245,7 +14246,17 @@ img.title-line {
     .hero-image {
         top: 357px;
         border-radius: 0px;
-        opacity: 0.9;
+    }
+
+    .hero-image::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: #ba537033;
+        left: 0;
+        filter: blur(37px);
     }
 
     .hero-image.two {
@@ -14291,7 +14302,6 @@ img.title-line {
 
     .hero-image {
         right: -50px;
-        opacity: 0.7;
         top: auto;
         bottom: auto;
         display: flex;
