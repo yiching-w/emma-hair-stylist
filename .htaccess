@@ -15,5 +15,5 @@ DirectoryIndex index.html index.htm index.php pagename.html
 
 	RewriteCond %{HTTPS} off [OR]
 	RewriteCond %{HTTP_HOST} ^www\.pinms\.com\.tw [NC]
-	RewriteRule (.*) https://pinms.com.tw/emma-hair-stylelist/$1 [L,R=301]
+	RewriteRule (.*) https://pinms.com.tw/emma-hair-stylist/$1 [L,R=301]
 </IfModule>
