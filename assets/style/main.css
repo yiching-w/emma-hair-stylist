@@ -13752,3 +13752,42 @@ h2.title::after {
         width: 100%;
     }
 }
+
+.promotionCard {
+    text-align: center;
+    background-color: hsla(0, 0%, 100%, 0.36);
+    backdrop-filter: blur(30px);
+    padding: 10px;
+    width: 40%;
+    margin: 0 auto;
+}
+
+.promotionCard::before {
+    content: '- Promotion -';
+    display: block;
+    margin-bottom: 10px;
+}
+
+.promotion {
+    font-size: 18px;
+    margin: 0 5px;
+    color: #ba5370;
+}
+
+@media (max-width:991px) {
+    .promotionCard {
+        width: 60%;
+    }
+}
+
+@media (max-width: 768px) {
+    .promotionCard {
+        width: 80%;
+    }
+}
+
+@media (max-width: 576px) {
+    .promotionCard {
+        width: 100%;
+    }
+}
